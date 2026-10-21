@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Turkish Barbers Club · Five Ways, Birmingham</title>
+<meta name="description" content="Inside Turkish Barbers Club, Five Ways Birmingham — the shop, the tools and the traditional Turkish barbering craft.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="concept-badge"><i class="bi bi-palette"></i> Design concept</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><i class="bi bi-scissors"></i> Turkish Barbers Club <small>Five Ways</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:01214542107" class="nav-phone"><i class="bi bi-telephone"></i> 0121 454 2107</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="crumbs"><a href="index.html">Home</a> · Gallery</span>
+      <h1>Inside the <span class="copper">shop</span></h1>
+      <p>Copper, leather and steam — a look at the chairs, the tools and the craft. Illustrations shown as design concept artwork.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/shop-interior.webp" alt="Painterly illustration of the copper-toned Turkish barbershop interior with classic chairs" loading="lazy">
+          <figcaption><i class="bi bi-shop"></i> The shop — copper, wood and warm light</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hot-towel-ritual.webp" alt="Painterly illustration of the hot-towel shave ritual" loading="lazy">
+          <figcaption><i class="bi bi-cloud-fog2"></i> The ritual — steam before the blade</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hero-barber.webp" alt="Painterly illustration of a barber with a straight razor over a reclined client" loading="lazy">
+          <figcaption><i class="bi bi-scissors"></i> The work — the straight-razor shave</figcaption>
+        </figure>
+        <figure>
+          <img src="images/tools-still-life.webp" alt="Painterly still life of barber tools on dark wood" loading="lazy">
+          <figcaption><i class="bi bi-tools"></i> The tools — razor, clippers, brush and lather</figcaption>
+        </figure>
+      </div>
+
+      <div class="note-strip">
+        <i class="bi bi-camera"></i>
+        <div>Follow the shop on Facebook for real photos of the work — the feed is full of fresh cuts from the chairs at Five Ways.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section visit">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow" style="color: var(--copper-soft); justify-content:center;">See it in person</span>
+      <h2>The kettle is always on.</h2>
+      <p class="lede" style="margin-left:auto; margin-right:auto;">Drop in at Morrisons on Hagley Road — or call ahead and we'll have the chair ready.</p>
+      <div class="visit-cta" style="justify-content:center;">
+        <a class="btn btn-copper" href="tel:01214542107"><i class="bi bi-telephone"></i> Call 0121 454 2107</a>
+        <a class="btn btn-ghost" href="contact.html"><i class="bi bi-geo-alt"></i> Plan your visit</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:16px;"><i class="bi bi-scissors"></i> Turkish Barbers Club <small>Five Ways</small></a>
+        <p style="color: rgba(247,241,229,0.7); max-width: 42ch; font-size: 15px;">Traditional Turkish barbering in Five Ways, Birmingham — hot-towel shaves, skin fades and beard styling, seven days a week.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Inside Morrisons, 30 Hagley Road</li>
+          <li>Birmingham B16 8PE</li>
+          <li><a href="tel:01214542107">0121 454 2107</a></li>
+          <li>Mon–Sat 9am–8pm · Sun 10am–5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Turkish Barbers Club · Design concept — not the live site</span>
+      <span>Open 7 days a week</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+  });
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { nav.classList.remove('open'); });
+  });
+})();
+</script>
+</body>
+</html>
