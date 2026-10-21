@@ -1,6 +1,6 @@
 # Turkish Barbers Club Five Ways
 
-Demo website concept for **Turkish Barbers Club Five Ways** — Birmingham, UK.
+Demo website concept for **Turkish Barbers Club Five Ways** — Birmingham.
 
 Live preview: https://turkish-barbers-five-ways-mockup.netlify.app
 

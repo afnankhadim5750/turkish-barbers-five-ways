@@ -34,7 +34,7 @@ body {
 img { display: block; max-width: 100%; }
 
 h1, h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: 0.01em;
@@ -87,7 +87,7 @@ a { color: inherit; }
   padding-bottom: 14px;
 }
 .brand {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
   font-size: 21px;
   letter-spacing: 0.06em;
@@ -157,7 +157,7 @@ a { color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.08em;
@@ -288,7 +288,7 @@ a { color: inherit; }
 }
 .stat b {
   display: block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 34px;
   font-weight: 700;
   color: var(--copper-soft);
@@ -321,7 +321,7 @@ a { color: inherit; }
 .svc-rule { width: 44px; height: 3px; background: var(--copper); }
 .svc-body p { font-size: 15px; color: rgba(31, 27, 22, 0.76); flex: 1; }
 .svc-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -355,7 +355,7 @@ a { color: inherit; }
 }
 .ritual li:last-child { border-bottom: none; }
 .ritual .num {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--copper-soft);
@@ -386,7 +386,7 @@ a { color: inherit; }
   padding: 34px 18px 14px;
   background: linear-gradient(transparent, rgba(23, 19, 16, 0.88));
   color: var(--cream);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -435,7 +435,7 @@ a { color: inherit; }
   justify-content: space-between;
   gap: 16px;
   padding: 22px 26px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -503,7 +503,7 @@ a { color: inherit; }
 .gallery-grid figcaption {
   padding: 16px 20px;
   color: var(--cream);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -525,7 +525,7 @@ a { color: inherit; }
 .contact-card i.big { font-size: 32px; color: var(--copper-deep); display: block; margin-bottom: 16px; }
 .contact-card h2 { font-size: 20px; margin-bottom: 12px; }
 .contact-card p { font-size: 15.5px; color: rgba(31, 27, 22, 0.78); margin-bottom: 8px; }
-.contact-card a.tel { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: 0.03em; }
+.contact-card a.tel { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: 0.03em; }
 .contact-card a.tel:hover { color: var(--copper-deep); }
 .hours-table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
 .hours-table td { padding: 10px 4px; border-bottom: 1px solid var(--line); }
@@ -608,3 +608,6 @@ a { color: inherit; }
   .hero-cta .btn { width: auto; }
   .ritual li { grid-template-columns: 48px 1fr; gap: 14px; }
 }
+
+/* Typography: Barlow Condensed reads narrower than Oswald — bump hero scale */
+.hero h1 { font-size: clamp(46px, 6.2vw, 76px); font-weight: 700; }
